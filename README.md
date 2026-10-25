@@ -15,6 +15,15 @@ This project is part of my hands-on IT and cybersecurity learning portfolio.
 - Python 3
 - No third-party packages
 
+## Get the project
+
+```sh
+git clone https://github.com/Jimmyg1983/network-port-checker.git
+cd network-port-checker
+```
+
+You can also use GitHub's **Code → Download ZIP** option and extract the files.
+
 ## Run it
 
 Open PowerShell or a terminal in the repository folder:
@@ -44,6 +53,13 @@ Scan complete!
 
 This output is **illustrative**, not an actual scan result. Results depend on what is running on your computer.
 
+## Understanding the results
+
+- `OPEN` means a TCP connection succeeded at the time of the check. It does not identify the application or prove a vulnerability.
+- `Not open or unreachable` can reflect a refused connection, timeout, or filtering; it is not a security verdict.
+- The target is the loopback address, so the script checks this computer, not the whole local network.
+- Port 53 is checked using TCP only; this does not test UDP DNS connectivity.
+
 ## What I practiced
 - Python loops and lists
 - Python's built-in `socket` module
@@ -63,4 +79,4 @@ The target is hard-coded to `127.0.0.1`. Only test computers and networks you ow
 ## Author
 **James Gamache** — BSIT student with a cybersecurity focus.
 
-[Portfolio](https://jimmyg1983.github.io/) · [GitHub](https://github.com/Jimmyg1983)
+[Portfolio](https://james-gamache-cyber-portfolio.prettyox7.chatgpt.site/) · [GitHub](https://github.com/Jimmyg1983)
